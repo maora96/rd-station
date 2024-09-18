@@ -1,0 +1,42 @@
+@use "../../styles/variables.scss" as g;
+
+.header {
+  height: 5.625rem;
+  width: 100vw;
+  background-color: g.$white;
+}
+
+.container {
+  color: g.$black;
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title {
+  font-family: var(--font-darker-grotesque);
+  font-size: 1.5rem;
+}
+
+.image {
+  width: 147px;
+  height: 36px;
+
+  img {
+    position: static !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .image {
+    width: 100px;
+    height: 24px;
+  }
+
+  .title {
+    font-size: 0.9375rem;
+  }
+}

@@ -1,0 +1,115 @@
+@use "../../styles/variables.scss" as g;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: g.$white;
+  font-family: var(--font-nunito-sans);
+  width: 35%;
+
+  a {
+    color: g.$white;
+    text-decoration: none;
+    font-size: 1.25rem;
+
+    display: flex;
+    align-items: center;
+  }
+}
+
+.card {
+  width: 31.875rem;
+  height: 15.4375rem;
+  background-color: g.$white;
+  display: flex;
+  border-radius: 1.5rem;
+  box-shadow: 0px 8px 18px 0px rgba(33, 36, 41, 0.1607843137);
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.button {
+  background-color: g.$light-gray;
+  border: none;
+  height: 3rem;
+  width: 31.875rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+
+  text-transform: uppercase;
+  font-family: var(--font-nunito-sans);
+  color: g.$mid-gray;
+  font-size: 1rem;
+  font-weight: 800;
+
+  -webkit-box-shadow: 0px 6px 0px 0px rgba(151, 161, 172, 1);
+  -moz-box-shadow: 0px 6px 0px 0px rgba(151, 161, 172, 1);
+  box-shadow: 0px 6px 0px 0px rgba(151, 161, 172, 1);
+}
+
+.outbound {
+  text-decoration: none;
+  color: g.$white;
+  text-transform: uppercase;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+.info {
+  border-left: 3px solid g.$light-purple;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  color: black;
+  font-size: 1.25rem;
+  gap: 1rem;
+}
+
+.symbol {
+  width: 70px;
+  height: 60px;
+
+  img {
+    position: static !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .container {
+    width: 100%;
+
+    a {
+      font-size: 1rem;
+    }
+  }
+
+  .card {
+    width: 100%;
+    height: 10rem;
+    gap: 0.2rem;
+  }
+
+  .info {
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+
+  .symbol {
+    min-width: 45px;
+    height: 48px;
+  }
+
+  .button {
+    width: 100%;
+    font-size: 0.875rem;
+  }
+
+  .outbound {
+    text-align: center;
+  }
+}

@@ -1,0 +1,32 @@
+@use "./variables.scss" as g;
+
+.container {
+  width: 100vw;
+  height: calc(100vh - 9.125rem);
+  background: linear-gradient(93.82deg, #6c5ae0 -1.6%, #806eff 105.56%);
+}
+
+.content {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  gap: 2rem;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
+.image {
+  padding-top: 4rem;
+}
+
+@media (max-width: 575.98px) {
+  .image {
+    display: none;
+  }
+
+  .content {
+    align-items: flex-start;
+    padding-top: 3rem;
+  }
+}

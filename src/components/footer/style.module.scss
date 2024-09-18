@@ -1,0 +1,28 @@
+@use "../../styles/variables.scss" as g;
+
+.footer {
+  height: 3.5rem;
+  width: 100vw;
+  background-color: g.$gray;
+  color: g.$dark-gray;
+  font-family: var(--font-nunito-sans);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  span {
+    margin-right: 0.5rem;
+    font-weight: 700;
+
+    a {
+      color: g.$dark-gray;
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .footer {
+    font-size: 0.875rem;
+  }
+}
